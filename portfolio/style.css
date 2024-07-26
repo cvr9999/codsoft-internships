@@ -1,0 +1,519 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    z-index: -1;
+}
+
+.logo {
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+
+.menu-icon {
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+.box1 {
+    width: 30%;
+    height: 100vh;
+    background-color: #40a7a2f0;
+}
+
+.box2 {
+    width: 60%;
+    height: 100%;
+}
+
+/* navigation bar */
+
+.nav {
+    width: 100%;
+    height: 50px;
+    background-color: antiquewhite;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+}
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+.links {
+    display: flex;
+    height: 70px;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a:hover,a.active {
+    color: #48bcb6f0;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+/* block one */
+
+.block1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    /* border: 1px solid black; */
+}
+
+.blc {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blc1 {
+    width: 40%;
+}
+
+.blc1 img {
+    border-radius: 50%;
+    width: 150px;
+}
+
+.blc1 h1,p{
+    margin-top: 10px;
+}
+
+.blc1 p {
+    font-size: 25px;
+}
+
+.blc1 {
+    background-color: #48bcb6f0;
+    box-shadow: 0 0 5px black;
+}
+
+.blc2 {
+    width: 55%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+.social-media {
+    background-color: antiquewhite;
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.social-media i {
+    text-decoration: none;
+    color: black;
+}
+.social-media i:hover {
+    cursor: pointer;
+}
+
+.heading {
+    font-size: 150px;
+    margin-left: 20px;
+}
+
+.about {
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.res a {
+    color: #fff;
+}
+
+.res:hover a {
+    color: black;
+}
+.res {
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: orange;
+    padding: 10px 15px;
+    border: 1px solid orange;
+    border-radius: 25px ;
+    color: white;
+}
+
+.res:hover {
+    background-color: transparent;
+    color: black;
+    border: 1px solid orange;
+    cursor: pointer;
+}
+.proj {
+    margin-left: 15px;
+    background: transparent;
+    padding: 10px 15px;
+    border: 1px solid black;
+    border-radius: 25px ;
+}
+
+.proj:hover {
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    border: 1px solid orange;
+}
+
+/* resume  */
+
+.resume {
+    margin-top: 100px;
+    background-color: #48da8af0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+.resume-box {
+    width: 60%;
+    margin: auto;
+    height: 75%;
+    /* border: 1px solid black; */
+}
+.resume h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.Education {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Education button {
+    background-color: orange;
+    padding: 10px 15px;
+    border: 2px solid orange;
+    border-radius: 25px;
+    color: white;
+    font-size: 20px;
+}
+
+.Education a {
+    color: white;
+}
+
+.Education button:hover {
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid orange;
+}
+
+.Education h3 {
+    font-size: 25px;
+}
+
+.Education-box {
+    height: 420px;
+    width: 900px;
+    background-color: aliceblue;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 8px;
+    margin-bottom: 100px;
+}
+
+.Education-box .college {
+    text-align: left;
+    margin-left: 50px;
+}
+
+.Education-box h3,p {
+    margin-left: 50px;
+}
+
+.Education-box .nri {
+    display: flex;
+    justify-content: center;
+}
+.Education-box img {
+    height: 200px;
+    width: 40%;
+}
+
+.imgs {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.imgs img {
+    width: 25%;
+}
+
+.hello:hover .imgs img {
+    position: relative;
+    animation-name: example;
+    animation-duration: 1s;  
+    animation-fill-mode: both;
+    margin-bottom: 100px;
+}
+
+@keyframes example {
+    to {top: 0px; }
+  from {top: 200px; }
+}
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* contact  */
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #48bcb6f0;
+    height: 800px;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.contact-box {
+    font-size: 25px;
+    height: 70%;
+    width: 80%;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: self-start;
+}
+
+.contact-box input {
+    width: 500px;
+    font-size: 25px;
+    border: none;
+    border-bottom:2px solid orange;
+    background: transparent;
+    margin-left: 30px;
+}
+
+.contact-box input:hover {
+    border: none;
+    border-bottom:2px solid #48bcb6f0;
+}
+.contact-box label {
+    margin-left: 30px;
+}
+
+.contact-box button {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 30px;
+    padding: 10px 15px;
+    background-color: orange;
+    border: 2px solid orange;
+    border-radius: 25px;
+    color: #fff;
+}
+
+.contact-box button:hover {
+    color: black;
+    cursor: pointer;
+    background-color: aliceblue;
+}
+
+.projects{
+    display: grid;
+    background-color: aquamarine;
+    margin-top: 100px;
+}
+.projects h1 {
+    text-align: center;
+    margin-top: 30px;
+}
+.p-list {
+    height: auto;
+    margin: auto;
+}
+.project{
+    border-radius: 20px;
+    max-width: 360px;
+    height: 300px;
+    margin: 1.3rem;
+    background-color: black;
+}
+
+.project video {
+    border-radius: 50%;
+}
+
+
+@media (max-width:905px){
+    .menu-icon{
+        display: block;
+    }
+    .link .links {
+        width: 100%;
+        height: auto;
+        background: aquamarine;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        z-index: 1000;
+        display: block;
+    }
+    .link .links li {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #menuList {
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    nav {
+        height: 60px;
+    }
+    .logo {
+        text-align: center;
+        margin-top: 10px;
+        margin-right: 120px;
+    }
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+    .nav-bar{
+        width: auto;
+        margin-left: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .logo {
+        font-size: 15px;
+        margin-left: 20px;
+        width: 250px;
+    }
+    .blc{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .blc1{
+        margin-top: 300px;
+        width: 300px;
+    }
+    .blc2 {
+        height: 500px;
+        width: auto;
+    }
+    .info {
+        text-align: center;
+        font-size: 15px;
+        margin-top: 100px;
+    }
+    .info h1 {
+        font-size: 30px;
+    }
+    .info p {
+        margin-left: 0px;
+    }
+    .container{
+        height: 1000px;
+    }
+    .box1,.box2{
+        height: 100%;
+    }
+
+    .resume {
+        margin-top: 350px;
+    }
+    .contact-box {
+        height: 600px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contact-box input {
+        width: 270px;
+        margin: auto;
+    }
+    .name {
+        margin-top: 30px;
+    }
+    .Education {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+        height: 100px;
+    }
+    .Education-box {
+        width: 95%;
+    }
+
+    .Education-box h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+    .Education-box h3,p{
+        margin-left: 0;
+    }
+    .Education-box .college,h3,p{
+        font-size: 15px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .Education-box img {
+        height: auto;
+    }
+    .resume-box {
+        width: 100%;
+    }
+}
